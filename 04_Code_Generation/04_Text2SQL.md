@@ -8,7 +8,7 @@
 ## 환경셋팅 
 
 #### 1. 다음 실습은 Calude 3 Sonnet 과 Titan Embeddings G1 - Text models를 사용하므로, model access에서 두 모델에 대한 사용 요청을 합니다. 
-![alt text](image-4.png)
+![alt text](images/35830B02-44F6-4F2B-A180-3F71A112673A.jpeg)
 
 
 
