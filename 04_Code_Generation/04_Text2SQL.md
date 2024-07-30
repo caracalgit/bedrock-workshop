@@ -5,22 +5,35 @@
 
 
 
-![alt text](image.png)
-
-
 ## 환경셋팅 
 
-1. 다음 실습은 Calude 3 Sonnet 과 Titan Embeddings G1 - Text models를 사용하므로, model access에서 두 모델에 대한 사용 요청을 합니다. 
+#### 1. 다음 실습은 Calude 3 Sonnet 과 Titan Embeddings G1 - Text models를 사용하므로, model access에서 두 모델에 대한 사용 요청을 합니다. 
 ![alt text](image-4.png)
 
 
 
-2. SageMaker Console(https://console.aws.amazon.com/sagemaker)을 열고 Notebook을 하나 생성합니다. 
-![alt text](image-1.png)
+#### 2. SageMaker Console(https://console.aws.amazon.com/sagemaker)을 열고 Notebook을 하나 생성합니다. 
+![alt text](C470224F-B696-4C80-AD05-71C8944CDCAB.jpeg)
 
-3. Notebook Instance에서 Terminal을 실행시킵니다.  ![alt text](image-2.png)
+notebook instance name을 설정하고, 알맞은 인스턴스 타입을 선택합니다. (예시에서는 ml.g4dn.xlarge 사용 )
+![alt text](F7004C1C-D767-4919-AE99-ACADA13E3BDB.jpeg)
 
-4. 다음 코드를 clone하여 실행시킵니다. 
+미리 생성되어있는 기본 IAM Role을 선택합니다.
+![alt text](636E38A9-49AE-4641-B8CA-40861918DF09.jpeg)
+
+![alt text](0F18DB70-E9BD-4685-9D2B-EA5407967521_4_5005_c.jpeg)
+
+
+
+#### 3.IAM Role에서 AmazonAthenaFullAccess, AWSGludConsoleFullAccess를 추가합니다. 
+![alt text](CE36D6E7-4BEF-475D-B1BC-62A8EA3B09D6.jpeg)
+![alt text](5359E412-190A-459A-9E34-E9E04A645E95.jpeg)
+![alt text](68043480-450B-4728-81E9-EB806B746DA5.jpeg)
+
+
+#### 4. Notebook Instance에서 Terminal을 실행시킵니다.  ![alt text](image-2.png)
+
+#### 5. 다음 코드를 clone하여 실행시킵니다. 
 
 ```
 cd SageMaker
@@ -30,6 +43,10 @@ cd SageMaker
 git clone https://github.com/caracalgit/natural-language-querying-of-data-in-s3-with-athena-and-generative-ai-text-to-sql.git
 ```
 
-5. 노트북을 실행시키면 다음과 같습니다.
+5. kernel로 conda_python3를 선택하여 code>workshop.ipynb 파일을 실행시킵니다.
 
-![alt text](image-3.png)
+![alt text](E6D6B614-C819-4C6B-9499-6FD2130C2419.jpeg)
+
+
+
+
